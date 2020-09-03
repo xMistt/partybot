@@ -2,7 +2,7 @@ import asyncio
 import os
 import uvloop
 
-os.system('pip install -U PartyBotPackage==0.1.9')
+os.system('pip install -U PartyBotPackage')
 os.system('clear')
 
 import PartyBotPackage
@@ -15,4 +15,9 @@ client = PartyBotPackage.PartyBot(
     secret=os.getenv('SECRET')
 )
 
-client.run()
+try:
+    client.run()
+except Exception as e:
+    print(e)
+    print("Failed to login, are you sure you've created a .env file and pasted your device auths? If you're confused, re-watch the tutorial.")
+    

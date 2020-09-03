@@ -19,5 +19,5 @@ try:
     client.run()
 except Exception as e:
     print(e)
-    print("Failed to login, are you sure you've created a .env file and pasted your device auths? If you're confused, re-watch the tutorial.")
+    print("Failed to login, are you sure you've created a .env file and pasted your device auths?\nIf you're confused, re-watch the tutorial.")
     

@@ -28,5 +28,5 @@ try:
 except Exception as e:
     print(e)
     print("Failed to login, your device auths are probably invalid, please "
-          "try again and make new ones?\nIf you're confused, re-watch the "
+          "try again and make new ones.\nIf you're confused, re-watch the "
           "tutorial.")

@@ -1,6 +1,14 @@
 import asyncio
 import os
 import uvloop
+import sys
+
+if not os.getenv('DEVICE_ID') and \
+        not os.getenv('ACCOUNT_ID') and \
+        not os.getenv('SECRET'):
+    print("Please paste your device auths into the \".env\" file.\n"
+          "If you're confused, re-watch the tutorial.")
+    sys.exit()
 
 os.system('pip install -U PartyBotPackage')
 os.system('clear')
@@ -19,5 +27,6 @@ try:
     client.run()
 except Exception as e:
     print(e)
-    print("Failed to login, are you sure you've created a .env file and pasted your device auths?\nIf you're confused, re-watch the tutorial.")
-    
+    print("Failed to login, your device auths are invalid, please try "
+          "again and make new ones?\nIf you're confused, re-watch the"
+          "tutorial.")

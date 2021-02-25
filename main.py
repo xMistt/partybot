@@ -1,6 +1,5 @@
 import asyncio
 import os
-import uvloop
 import sys
 
 if not os.getenv('DEVICE_ID') and \
@@ -14,6 +13,7 @@ os.system('pip install certifi')
 os.system('pip install -U PartyBotPackage')
 os.system('clear')
 
+import uvloop
 import PartyBotPackage
 
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())

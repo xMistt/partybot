@@ -5,3 +5,4 @@
 If you want you see the source code for the bot, you can click [here](https://github.com/xmistt/fortnitepy-bot) and if you need help, join the [discord server](https://discord.gg/8heARRB).
 
 
+To generate device auths for the `.auth` file, go to https://partybot.net and follow the steps!
